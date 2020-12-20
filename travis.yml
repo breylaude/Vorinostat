@@ -1,0 +1,16 @@
+ 
+language: cpp
+dist: bionic
+compiler: gcc
+os: linux
+env:
+    - CXX_STANDARD=c++11
+script: make
+before_install:
+- cd Vorinostat
+
+branches:
+  only:
+      - master
+notifications:
+  email: false
